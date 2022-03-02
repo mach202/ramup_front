@@ -1,6 +1,7 @@
 FROM node:12
-WORKDIR /usr/src/app
+WORKDIR C:/Users/PC/Desktop/ramup/ramup_front
 COPY package*.jason ./
-RUN npm install
 COPY . .
-CMD [ "node". "server.js"]
+EXPOSE 3030
+RUN npm install
+CMD [ "node", "server.js"]
